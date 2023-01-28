@@ -68,6 +68,6 @@ public class VendasController : ControllerBase
         _context.Vendas.Remove(vendaDataBase);
         _context.SaveChanges();
         
-        return NoContent();
+        return Ok();
     }
 }

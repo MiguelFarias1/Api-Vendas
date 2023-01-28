@@ -19,13 +19,42 @@ API REST com CRUD usando os seguintes métodos HTTP: POST, GET, PUT e DELETE.
 ## 📷 Imagens de testes com o PostMan
 - Teste POST
 
+- Endpoint Cadastro: https://localhost:7176/V1/CadastrarVenda 
+
+- Corpo para criação: 
+{
+  "id": 0,
+  "descricao": "string",
+  "preco": 0,
+  "data": "2023-01-28T15:06:11.740Z"
+}
+-----------------------------
 ![labelfoods](./assets/Post.png)
 
-- Teste GET
+- Teste GET ALL
 
+- Endpoint: https://localhost:7176/V1/ImprimirTudo
+
+-----------------------------
 ![labelfoods](./assets/ImprimirTudo.png)
 
+- Teste GET com ID:
 
+- Endpoint: https://localhost:7176/V1/Buscar{id} (Substituir as chaves e colocar o id no local)
+
+![labelfoods](./assets/GET.png)
+
+
+- Teste PUT
+- Endpoint: https://localhost:7176/V1/Atualizar{id} (Substituir as chaves e colocar o id no local)
+
+-----------------------------
+![labelfoods](./assets/PUT.png)
+
+
+- Teste DELETE
+-----------------------------
+![labelfoods](./assets/Delete.png)
 
 
 ## 🚀 Como rodar esse projeto ?
@@ -43,12 +72,23 @@ $ cd ApiVendas
 # Execute o comando restore
 $ dotnet restore
 
-# Instale os pacotes
+# Instale o Entity Framework
+
+$ dotnet tool install --global dotnet-ef
+
+# Instale os pacotes abaixo
+
 $ dotnet add package Microsoft.EntityFrameworkCore.SqlServer 
 
 $ dotnet add package Microsoft.EntityFrameworkCore.Services
 
 $ dotnet add package Microsoft.EntityFrameworkCore.Design
+
+# Inicialize o Banco de Dados
+$ dotnet ef add Migrations ApiVendas
+
+# Atualize o Banco de Dados
+$ dotnet ef database update
 
 # Execute a aplicação
 $ dotnet watch run
