@@ -22,7 +22,7 @@ API REST com CRUD usando os seguintes métodos HTTP: POST, GET, PUT e DELETE.
 # Execute o SQL Server
 
 # Clone este repositório 
-$
+$ git clone https://github.com/MiguelFarias1/Api-Vendas.git
 
 # Entre na pasta do projeto
 $ cd ApiVendas
