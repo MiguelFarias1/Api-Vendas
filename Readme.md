@@ -6,6 +6,7 @@ API REST com CRUD usando os seguintes métodos HTTP: POST, GET, PUT e DELETE.
 
 ## Índice
 - <a href="#Tecnologias utilizadas">Tecnologias utilizadas no Projeto</a>
+- <a href="#Imagens de testes com o PostMan">Imagens dos testes</a>
 
 
 ## 🛠️ Tecnologias utilizadas 
@@ -13,6 +14,18 @@ API REST com CRUD usando os seguintes métodos HTTP: POST, GET, PUT e DELETE.
 2. [Microsoft Entity Framework Core](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore)
 3. [ASP.NET Core](https://dotnet.microsoft.com/pt-br/apps/aspnet) 
 4. [Microsoft SQL Server Express](https://www.microsoft.com/pt-br/sql-server/sql-server-downloads)
+
+
+## 📷 Imagens de testes com o PostMan
+- Teste POST
+
+![labelfoods](./assets/Post.png)
+
+- Teste GET
+
+![labelfoods](./assets/ImprimirTudo.png)
+
+
 
 
 ## 🚀 Como rodar esse projeto ?
